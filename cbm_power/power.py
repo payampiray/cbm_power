@@ -26,7 +26,7 @@ class PowerConfig:
     target_effect_size: Optional[float]  # target for optimization (if used)
 
 
-# ---- 2) Model outputs / metrics (small, easy to serialize) ----
+# ---- 2) Model outputs / metrics ----
 @dataclass
 class PowerMetrics:
     power: float
@@ -34,7 +34,7 @@ class PowerMetrics:
     false_positive_rate: float
     true_dirichlet_parameter: float
 
-# ---- 3) Heavy arrays (keep separate so you can drop or summarize) ----
+# ---- 3) Heavy arrays ----
 @dataclass
 class PowerData:
     posterior_parameters: Array
