@@ -5,7 +5,7 @@ Computational Behavioral/Brain Modeling (CBM) Library for Power Analysis and Sam
 ## Overview
 
 `cbm_power` is a Python package for estimating statistical power and optimizing sample sizes in computational modeling studies.  
-It provides tools for simulation-based power estimation and automated sample-size optimization. It implements the method described in this study:
+It provides tools for simulation-based power estimation and automated sample-size optimization. It implements the method described in this study:\\
 Piray Payam, Addressing low statistical power in computational modeling studies in psychology and neuroscience, 2025, Nature Human Behaviour.
 
 ## Installation
@@ -13,7 +13,7 @@ Piray Payam, Addressing low statistical power in computational modeling studies 
 Clone this repository and install dependencies:
 
 ```bash
-git clone https://github.com/your-username/cbm_power.git
+git clone https://github.com/payampiray/cbm_power.git
 cd cbm_power
 pip install -e .
 ```
