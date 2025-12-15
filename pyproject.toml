@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cbm-power"
+version = "0.1.0"
+description = "Computational Behavioral/Brain Modeling (CBM) Library for Power Analysis and Sample-Size Optimization."
+readme = "README.md"
+authors = [{ name = "Payam Piray" }]
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+dependencies = [
+  "numpy",
+  "scipy",
+  "ax-platform",
+]
+keywords = ["power analysis", "sample size", "computational modeling", "neuroscience", "psychology"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering",
+]
+
+[project.urls]
+Homepage = "https://github.com/payampiray/cbm_power"
+Repository = "https://github.com/payampiray/cbm_power"
+
+[tool.setuptools]
+packages = ["cbm_power"]

@@ -1,12 +1,11 @@
 # cbm_power
 
-Computational Behavioral/Brain Modeling (CBM) Library for Power Analysis and Sample-Size Optimization for Computational Studies.
+Computational Behavioral/Brain Modeling (CBM) Library for power analysis and sample-size optimization for computational studies.
 
 ## Overview
 
 `cbm_power` is a Python package for estimating statistical power and optimizing sample sizes in computational modeling studies.  
 It provides tools for simulation-based power estimation and automated sample-size optimization. It implements the method described in this study:
-
 Piray Payam, Addressing low statistical power in computational modeling studies in psychology and neuroscience, 2025, Nature Human Behaviour.
 
 ## Installation
@@ -14,7 +13,7 @@ Piray Payam, Addressing low statistical power in computational modeling studies 
 Clone this repository and install dependencies:
 
 ```bash
-git clone https://github.com/payampiray/cbm_power.git
+git clone https://github.com/your-username/cbm_power.git
 cd cbm_power
 pip install -e .
 ```
@@ -44,22 +43,30 @@ best_sample_size = ss.compute_sample_size()  # this saves a JSON and a log file
 print("Optimized sample size:", best_sample_size)
 ```
 
+## Examples
+
+- `examples/example_power.py` — run power analysis for a given sample size and model space size.
+- `examples/example_sample_size.py` — optimize N and save JSON/log artifacts.
+
 ## Repository structure
 
 ```
 cbm_power/
 ├── cbm_power/
 │   ├── __init__.py        # Exposes Power, SampleSize, Config
-│   ├── power.py           # Power estimation logic
-│   ├── distributions.py   # Distribution utilities
-│   ├── sample_size.py     # Sample size optimization
 │   ├── config.py          # Config dataclass used in SampleSize
-│   └── loggers.py         # Loggers used in SampleSize
+│   ├── distributions.py   # Distribution utilities
+│   ├── logger.py          # Logging utilities
+│   ├── optimizer.py       # Internal optimizer helpers
+│   ├── power.py           # Power estimation logic
+│   └── sample_size.py     # Sample size optimization
 ├── docs/
-│   ├── manual.ipynb       # Detailed usage guide & troubleshooting
-├── README.md
-├── .gitignore
-├── license
+│   └── manual.md          # Markdown version of the manual
+├── examples/
+│   ├── example_power.py           # Power computation example
+│   └── example_sample_size.py     # Sample-size optimization ├── README.md
+├── LICENSE
+├── pyproject.toml
 └── requirements.txt
 
 ```
@@ -74,7 +81,7 @@ Both are stored in the current directory.
 
 ## Documentation
 
-A detailed manual (Jupyter Notebook) explaining the method, background, and step-by-step usage of `cbm_power` is available in the [`docs/`](docs/) directory.  
+A manual explaining the method, background, and step-by-step usage of `cbm_power` is available in the [`docs/`](docs/) directory.  
 It includes:
 
 - Key conceptual points about power in computational modeling studies
